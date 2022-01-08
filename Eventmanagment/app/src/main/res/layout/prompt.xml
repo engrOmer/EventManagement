@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+
+
+    >
+
+
+    <TextView
+        android:id="@+id/txtfilename"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="For Notification"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:imeOptions="flagNoExtractUi"
+        android:hint="Enter Your Email"
+        >
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+          android:hint="Enter Your Number"
+     >
+
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorPrimary"
+            android:text="cancel"
+            android:textColor="@color/wallet_bright_foreground_holo_dark" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Ok"
+            android:textColor="@color/wallet_bright_foreground_holo_dark" />
+    </LinearLayout>
+
+</LinearLayout>

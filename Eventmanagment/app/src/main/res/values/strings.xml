@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Booking On The Go</string>
+    <string name="Apikey">AIzaSyCSdWi4Tkw-jyrISWGwGvENmdYmfPOMa_o</string>
+    <string-array name="price">
+        <item>100</item>
+        <item>150</item>
+        <item>"200"</item>
+
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+
+
+    </string-array>
+</resources>

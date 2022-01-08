@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+
+    xmlns:cpb="http://schemas.android.com/apk/res-auto"
+    android:background="#FDEDEC"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo"
+                android:layout_below="@+id/location"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/name"
+                    android:hint="Name of your service"
+                    android:layout_margin="10dp"
+
+
+
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/presstobrowse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Press to browse for logo"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/name"
+
+                    />
+                <ImageView
+
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/logoimage"
+                    android:src="@drawable/download"
+                    android:layout_below="@+id/presstobrowse"
+
+
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hallpics"
+                android:layout_below="@id/logo"
+
+                >
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Press to browse for hall images"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/browseforimages"
+
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/browseforimages">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/images"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/firstimage"
+
+                            android:src="@drawable/download"
+                            android:layout_margin="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/secondimage"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/download"
+                            />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Photographs"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/hallpics"
+                android:id="@+id/seats"
+
+                />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seats"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner"
+
+                >
+
+
+
+            </Spinner>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:layout_below="@id/spinner"
+                android:layout_marginTop="20dp"
+
+                android:inputType="number"
+                android:id="@+id/phonenumber"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Price"
+                android:layout_below="@id/phonenumber"
+                android:layout_marginTop="20dp"
+
+                android:inputType="number"
+                android:id="@+id/price"
+
+
+                />
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:layout_below="@id/price"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:id="@+id/submit"
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

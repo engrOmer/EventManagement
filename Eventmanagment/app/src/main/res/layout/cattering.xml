@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEDEC"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/name"
+                android:hint="Name of your service"
+                android:layout_margin="10dp"
+
+
+
+
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="perplate"
+                android:id="@+id/per_plate"
+                android:layout_marginLeft="20dp"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/name"
+
+
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Starter"
+                android:id="@+id/starter"
+                android:layout_below="@id/per_plate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/starter"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/listofstarter"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chksoup"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Soup"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/soup"
+                        android:entries="@array/price"
+
+
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkwonton"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Wonton"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        ></TextView>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/wonton"
+                        android:entries="@array/price"
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkfreshjuice"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fresh Juice"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/freshjuice"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            end of dessert
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Main Menu"
+                android:id="@+id/mainmeni"
+                android:layout_below="@id/listofstarter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainmeni"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/listofmainmenu"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkbiryani"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Biryani"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/biryani"
+                        android:entries="@array/price"
+
+
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkqorma"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Qorma"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        ></TextView>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/qorma"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkQunna"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Qunna"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/Qunna"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkTikka"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tikka"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/tikka"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkchinees"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chinees"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/chinees"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+// end of main course
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Dessert"
+                android:id="@+id/dessert"
+                android:layout_below="@id/listofmainmenu"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dessert"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/listofdessert"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chklabayshereen"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Labaysheeryn"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/labaysheeryn"
+                        android:entries="@array/price"
+
+
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkkulfi"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kulfi"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        ></TextView>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/kulfi"
+                        android:entries="@array/price"
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/chkicecream"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ice cream"
+                        android:textSize="20dp"
+                        android:layout_weight="3"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/icecream"
+                        android:entries="@array/price"
+
+
+                        >
+
+
+
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone number"
+                android:layout_below="@id/listofdessert"
+                android:layout_marginTop="20dp"
+
+                android:inputType="number"
+                android:id="@+id/phonenumber"
+
+
+                />
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:layout_below="@id/phonenumber"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:onClick="onclick"
+                android:id="@+id/submit"
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout></ScrollView></RelativeLayout>

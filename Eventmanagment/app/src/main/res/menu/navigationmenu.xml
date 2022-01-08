@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Hall"
+        android:title="Hall"
+        android:icon="@drawable/ic_crop_landscape_black_24dp"
+        >
+
+
+
+    </item>
+
+    <item
+        android:id="@+id/photgrapher"
+
+        android:title="Photographer"
+        android:icon="@drawable/ic_add_a_photo_black_24dp"
+
+        />
+
+
+
+    <item android:id="@+id/Catering"
+        android:title="Catering"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+      />
+
+
+
+</menu>
